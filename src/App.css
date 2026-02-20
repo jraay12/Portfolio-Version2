@@ -1,0 +1,46 @@
+@import "normalize.css";
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-vt323: "VT323", monospace;
+
+  --animate-online: online 0.3s ease-in 1s forwards;
+  --animate-loading-screen: loading-screen 2s ease-in 1s both;
+  --animate-move-logo: move-logo 1s ease-in 0.3s both;
+
+  /* colors */
+  --color-primary: #EEEEEE;
+  --color-secondary: #222831;
+  --color-tertiary: #00ADB5;
+
+  @keyframes online {
+    0% {
+      background-color: var(--color-gray-600);
+    }
+
+    100% {
+      background-color: var(--color-green-600);
+    }
+  }
+
+  @keyframes loading-screen {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes move-logo {
+    100% {
+      translate: calc(var(--spacing) * 0) var(--tw-translate-y);
+    }
+  }
+}
