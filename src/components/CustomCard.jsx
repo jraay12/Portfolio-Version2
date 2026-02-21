@@ -1,43 +1,46 @@
 import React from "react";
 import github from "../assets/github.png";
-import navigate from "../assets/navigate.png"
-const CustomCard = ({ githubUrl, ProjectName, Description, Technologies, liveUrl }) => {
-  
+import navigate from "../assets/navigate.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+const CustomCard = ({
+  githubUrl,
+  ProjectName,
+  Description,
+  Technologies,
+  liveUrl,
+  Freelance,
+}) => {
+  AOS.init({
+    duration: 2000,
+    once: true,
+  });
   return (
-    <div className="font-vt323 h-100 md:w-80  rounded-lg inset-shadow-2xs shadow-sm relative z-50 bg-[#30364F] grow max-w-96 rotate-4">
-      <div className="group min-h-full bg-[#ECECEC] min-w-full rounded-lg -rotate-4 shad -z-10 inset-shadow-2xs shadow-sm p-4 hover:rotate-0 hover:scale-110 duration-300 cursor-pointer">
-        <div className="group-rotate-4 ">
-          <div className="flex justify-end gap-3">
-            {liveUrl && (
-              <a href={liveUrl} target="_blank">
-                <img
-                  src={navigate}
-                  alt="navigate"
-                  className="h-10 w-10 ml-auto hover:scale-110"
-                />
-              </a>
-            )}
-            <a href={githubUrl} target="_blank">
-              <img
-                src={github}
-                alt="github"
-                className="h-10 w-10 ml-auto hover:scale-110"
-              />
-            </a>
-          </div>
-          <p className="text-2xl font-bold mt-10 ">{ProjectName}</p>
-          <p className="mt-6 text-sm mb-4 text-secondary font-bold">
-            {Description}
-          </p>
+    <div className="relative w-full bg-secondary/10 shadow-md rounded-lg p-2 hover:scale-110 transition duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="50">
+      {/* icon container */}
+      <div className="absolute left-0 w-full flex justify-end gap-2 items-center px-2">
+        {githubUrl && (
+          <a href={githubUrl} target="_blank">
+            <img src={github} alt="" className="w-8 h-8" />
+          </a>
+        )}
+        {liveUrl && (
+          <a href={liveUrl} target="_blank">
+            <img src={navigate} alt="" className="w-7 h-7" />
+          </a>
+        )}
+      </div>
+      <p className="mt-16 text-2xl font-bold uppercase ">
+        {ProjectName}{" "}
+        <span className="text-xs text-black underline underline-offset-2">{`${Freelance ? "Freelance" : "Hobby"}`}</span>
+      </p>
+      <p className="text-sm mt-6 text-black/70 ">{Description}</p>
 
-          <div className="flex flex-wrap gap-2">
-            {Technologies?.map((item) => (
-              <div className="bg-[#30364F] text-white text-center  p-1 max-w-1/2 rounded-full grow">
-                <p>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* tech start  */}
+      <div className="flex flex-wrap gap-4 mt-10 justify-start mb-4">
+        {Technologies.map((item) => (
+          <div className="border px-2 py-1 rounded-lg bg-primary ">{item}</div>
+        ))}
       </div>
     </div>
   );

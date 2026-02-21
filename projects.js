@@ -13,6 +13,7 @@ export const recentProjects = [
     project_name: "H&C Goldsmith",
     liveUrl: "",
     type: "Freelance Project",
+    freelance: true,
     githubUrl: "https://github.com/jraay12/inventory_v2",
     Description:
       "Developed a backend system for inventory management with integrated ordering functionality and basic financial tracking to monitor cash flow.",
@@ -30,6 +31,7 @@ export const recentProjects = [
     ],
     project_name: "Findly",
     liveUrl: "",
+    freelance: true,
     githubUrl: "https://github.com/jraay12/findly-backend.git",
     type: "Freelance Project",
     Description:
@@ -48,6 +50,7 @@ export const recentProjects = [
     ],
     project_name: "Progresso",
     liveUrl: "",
+    freelance: true,
     type: "Freelance Project",
     githubUrl: "https://github.com/jraay12/progresso-backend",
     Description:
@@ -60,6 +63,7 @@ export const recentProjects = [
     liveUrl: "https://jraay12.github.io/World-Browse/",
     type: "Freelance Project",
     githubUrl: "https://github.com/jraay12/World-Browse.git",
+    freelance: false,
     Description:
       "WorldBrowse is a modern web app to search and explore countries, displaying population, region, flags, and cultural info in a clean, intuitive interface.",
   },

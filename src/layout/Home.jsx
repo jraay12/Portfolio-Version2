@@ -12,12 +12,12 @@ const Home = () => {
           <div className="rounded-full bg-gray-600 z-20 h-6 w-6 right-12 absolute bottom-2 ring-2 ring-white animate-online"></div>
         </div>
         <div className="flex flex-col items-center lg:items-start lg:max-w-1/2 gap-4 animate-loading-screen ">
-          <p className=" font-vt323 text-center lg:text-start text-secondary">
-            Hey, they call me John!
+          <p className="uppercase text-center lg:text-start text-black">
+            Hello, they call me John!
           </p>
-          <p className="lg:text-3xl uppercase fonth-thin text-center lg:text-start  text-secondary">
+          <p className="lg:text-3xl uppercase fonth-thin text-center lg:text-start  text-black">
             A full-stack developer{" "}
-            <span className="text-secondary lg:text-5xl font-bold">
+            <span className="text-tertiary lg:text-5xl font-bold">
               building the future
             </span>
             , one line of code at a time.
@@ -52,7 +52,7 @@ const Home = () => {
       </div>
       <div className="absolute bottom-10 animate-bounce cursor-pointer">
         <a href="#experience">
-          <p className="text-tertiary font-bold">Scroll down</p>
+          <p className="text-forth font-bold">Scroll down</p>
         </a>
       </div>
     </div>

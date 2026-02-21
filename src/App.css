@@ -1,22 +1,23 @@
 @import "normalize.css";
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 @theme {
-  --font-vt323: "VT323", monospace;
+  --font-robot: "Roboto Slab", serif;
 
   --animate-online: online 0.3s ease-in 1s forwards;
   --animate-loading-screen: loading-screen 2s ease-in 1s both;
   --animate-move-logo: move-logo 1s ease-in 0.3s both;
 
   /* colors */
-  --color-primary: #EEEEEE;
-  --color-secondary: #222831;
-  --color-tertiary: #00ADB5;
+  --color-primary: #EBF4F6;
+  --color-secondary: #7AB2B2;
+  --color-tertiary: #088395;
+  --color-forth: #09637E  ;
 
   @keyframes online {
     0% {
