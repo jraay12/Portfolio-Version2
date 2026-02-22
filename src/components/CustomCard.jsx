@@ -16,7 +16,7 @@ const CustomCard = ({
     once: true,
   });
   return (
-    <div className="relative w-full bg-secondary/10 shadow-md rounded-lg p-2 hover:scale-110 transition duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="50">
+    <div className="relative w-full  font-robot bg-secondary/10 shadow-md rounded-lg p-2 hover:scale-110 transition duration-300 cursor-pointer" data-aos="fade-up" data-aos-delay="50">
       {/* icon container */}
       <div className="absolute left-0 w-full flex justify-end gap-2 items-center px-2">
         {githubUrl && (
@@ -30,11 +30,11 @@ const CustomCard = ({
           </a>
         )}
       </div>
-      <p className="mt-16 text-2xl font-bold uppercase ">
+      <p className="mt-16 text-2xl font-bold uppercase  font-robot">
         {ProjectName}{" "}
         <span className="text-xs text-black underline underline-offset-2">{`${Freelance ? "Freelance" : "Hobby"}`}</span>
       </p>
-      <p className="text-sm mt-6 text-black/70 ">{Description}</p>
+      <p className="text-sm mt-6 text-black/70 font-robot">{Description}</p>
 
       {/* tech start  */}
       <div className="flex flex-wrap gap-4 mt-10 justify-start mb-4">

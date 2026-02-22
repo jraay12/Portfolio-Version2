@@ -17,7 +17,7 @@ const Experience = () => {
       <p className=" mt-2 text-secondary text-center lg:text-start">
         _What experience do I bring?
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-10 mt-10 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-10 mt-10 mb-10  font-robot">
         <div
           class="rounded-2xl p-4 shadow-md bg-white/60 "
           data-aos="fade-right"
@@ -35,8 +35,8 @@ const Experience = () => {
           data-aos="fade-left"
         >
           <p className="font-bold text-2xl">Freelance</p>
-          <p className="text-sm font-thin">Fullstack Developer</p>
-          <p className="mt-6 font-thin">
+          <p className="text-sm font-thin">Backend Developer</p>
+          <p className="mt-6">
             Design and develop systems tailored to client needs and
             requirements, delivering responsive and fully functional web or
             mobile applications, while collaborating with clients regularly to
