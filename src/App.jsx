@@ -4,6 +4,7 @@ import Home from "./layout/Home";
 import About from "./layout/About";
 import Experience from "./layout/Experience";
 import Project from "./layout/Project";
+import Contact from "./layout/Contact";
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-primary overflow-x-hidden">
@@ -12,6 +13,7 @@ function App() {
       <Experience />
       <Project />
       <About />
+      <Contact />
     </div>
   );
 }
