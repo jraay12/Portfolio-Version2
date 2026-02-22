@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="lg:max-w-[1536px] mx-auto mt-20  font-vt323 p-10"
+      className="lg:max-w-[1536px] mx-auto mt-20  font-vt323 p-4"
     >
       <p className="text-5xl font-bold text-shadow-lg text-black  text-center lg:text-start">
         Experience

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className=" lg:max-w-[1536px] mx-auto mt-8 w-full font-vt323 p-10 relative"
+      className=" lg:max-w-[1536px] mx-auto mt-8 w-full font-vt323 p-4 relative"
     >
       <p className="text-5xl font-bold text-shadow-lg text-black text-center lg:text-start">
         About Me
@@ -19,8 +19,8 @@ const About = () => {
       {/* parent of the about */}
       <div className="flex flex-col md:flex-row justify-center items-center  gap-10 mt-10">
         {/* about me details */}
-        <div className=" inset-shadow-sm shadow-sm w-full min-h-98 rounded-xl p-10">
-          <p className="text-justify text-2xl font-robot">
+        <div className=" inset-shadow-sm shadow-sm w-full min-h-98 rounded-xl p-4">
+          <p className="text-justify text-xl lg:text-2xl font-robot">
            
             Hello, this is me — someone who values growth, meaningful
             experiences, and building strong connections. I embrace challenges
@@ -63,7 +63,7 @@ const About = () => {
             className="h-48 rounded-2xl overflow-hidden 
             
              transition duration-200
-             hover:rotate-3 hover:scale-110"
+             hover:rotate-3 hover:scale-110 "
           >
             <img
               src={image3}

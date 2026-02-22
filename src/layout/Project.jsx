@@ -11,7 +11,7 @@ const Project = () => {
   return (
     <div
       id="projects"
-      className="lg:max-w-[1536px] mx-auto mt-10 w-full font-vt323 p-10 brightness-90"
+      className="lg:max-w-[1536px] mx-auto mt-10 w-full font-vt323 p-4 brightness-90"
     >
       <p className="text-5xl font-bold text-shadow-lg text-black text-center lg:text-start" data-aos="fade-up">
         Projects

@@ -5,7 +5,7 @@ import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
 const Home = () => {
   return (
-    <div className=" lg:max-w-[1536px] min-h-screen  mx-auto flex-1 min-w-screen  flex flex-col justify-center items-center  p-10 ">
+    <div className=" lg:max-w-[1536px] min-h-screen  mx-auto flex-1 min-w-screen  flex flex-col justify-center items-center  p-4 ">
       <div className="flex flex-col lg:flex-row gap-10 justify-center items-center ">
         <div className="relative  lg:translate-x-100 lg:animate-move-logo z-50">
           <img src={myself} alt="" className="w-30 h-30 md:w-60 md:h-60 rounded-full" />
